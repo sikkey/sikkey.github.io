@@ -48,18 +48,13 @@ user ALL=(ALL) ALL 用户user执行sudo时需要密码。
 
 # Debian 初始化安装
 
-安装vim，unzip
-
+安装 ssh (必须先安装client,因为server依赖于client)
 ```
-sudo apt-get install vim unzip
-```
-
-安装 ssh
-```
-sudo apt install openssh-server
+sudo apt-get install openssh-client openssh-server
 ```
 
 安装完成后SSH 服务默认开启
+
 手动启动：
 ```
 systemctl start ssh.service
@@ -73,7 +68,26 @@ PermitRootLogin yes
 PasswordAuthentication yes
 ```
 
+更多关于 [openssh](./openssh.md) 的用法
+
+安装[vim](./vim.md)，unzip
+
+```
+sudo apt-get install vim unzip
+```
+
+# xshell 配置退格键
+
+```
+会话->属性->终端->键盘
+  DELETE 键序列 和 BACKSPACE 键序列
+  都设置为 ASCII 127
+  保存，重启xshell
+```
+
 
 # Debian 软件安装(可选)
 
-[Complex Punk 推荐开发初始化安装套装](./init_setup.md)
+* [openvpn](./openvpn.md)
+
+* [Complex Punk 推荐开发初始化安装套装](./init_setup.md)

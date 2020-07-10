@@ -1,14 +1,17 @@
 ## 更新源
 ```
-cat > /etc/apt/sources.list << EOF
-deb http://mirrors.163.com/debian/ buster main contrib non-free
-# deb-src http://mirrors.163.com/debian/ buster main contrib non-free
-deb http://mirrors.163.com/debian/ buster-updates main contrib non-free
-# deb-src http://mirrors.163.com/debian/ buster-updates main contrib non-free
-deb http://mirrors.163.com/debian/ buster-backports main contrib non-free
-# deb-src http://mirrors.163.com/debian/ buster-backports main contrib non-free
-deb http://mirrors.163.com/debian-security buster/updates main contrib non-free
-# deb-src http://mirrors.163.com/debian-security buster/updates main contrib non-free
+vi /etc/apt/sources.list
+```
+https 上海交大源
+```
+deb https://mirror.sjtu.edu.cn/debian/ stretch main contrib non-free
+deb-src https://mirror.sjtu.edu.cn/debian/ stretch main contrib non-free
+deb https://mirror.sjtu.edu.cn/debian/ stretch-updates main contrib non-free
+deb-src https://mirror.sjtu.edu.cn/debian/ stretch-updates main contrib non-free
+deb https://mirror.sjtu.edu.cn/debian/ stretch-backports main contrib non-free
+deb-src https://mirror.sjtu.edu.cn/debian/ stretch-backports main contrib non-free
+deb https://mirror.sjtu.edu.cn/debian-security/ stretch/updates main contrib non-free
+deb-src https://mirror.sjtu.edu.cn/debian-security/ stretch/updates main contrib non-free
 ```
 
 ## 更新软件包索引
