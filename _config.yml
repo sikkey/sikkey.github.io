@@ -1,7 +1,7 @@
 title: Sikkey.GitHub.io/help
 description: Code life
-google_analytics: 
-show_downloads: true
+google_analytics:
+show_downloads: false
 theme: jekyll-theme-hacker
 
 gems:
