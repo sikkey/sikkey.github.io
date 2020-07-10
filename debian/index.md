@@ -14,6 +14,12 @@
 
 [Debian 10.4 AMD64 安装映像](http://http.us.debian.org/debian/dists/buster/main/installer-arm64/current/images/)
 
+# Debian 切换为root用户
+```
+# su
+```
+输入命令后提示输入密码，输入密码切换为root用户
+
 # Debian普通用户添加sudo权限
 
 1、安装sudo
@@ -47,6 +53,26 @@ user ALL=(ALL) ALL 用户user执行sudo时需要密码。
 ```
 sudo apt-get install vim unzip
 ```
+
+安装 ssh
+```
+sudo apt install openssh-server
+```
+
+安装完成后SSH 服务默认开启
+手动启动：
+```
+systemctl start ssh.service
+```
+
+修改配置：
+```
+nano /etc/ssh/sshd_config
+
+PermitRootLogin yes
+PasswordAuthentication yes
+```
+
 
 # Debian 软件安装(可选)
 
