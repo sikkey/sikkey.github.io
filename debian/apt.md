@@ -2,6 +2,19 @@
 ```
 vi /etc/apt/sources.list
 ```
+2020年7月13日 推荐使用buster[清华源](https://mirror.tuna.tsinghua.edu.cn/help/debian/)
+```
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ buster main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-updates main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main contrib non-free
+deb https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free
+# deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free
+```
+
 https 上海交大源
 ```
 deb https://mirror.sjtu.edu.cn/debian/ stretch main contrib non-free

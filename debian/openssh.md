@@ -1,5 +1,9 @@
 # 安装 openssh
 ```
+sudo apt-get install openssh-server
+```
+部分系统没有安装client
+```
 sudo apt-get install openssh-client openssh-server
 ```
 

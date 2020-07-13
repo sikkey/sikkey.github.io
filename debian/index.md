@@ -85,6 +85,10 @@ sudo apt-get install vim unzip
   保存，重启xshell
 ```
 
+# 安装桌面图标功能
+```
+sudo apt-get install gnome-shell-extension-desktop-icons
+```
 
 # Debian 软件安装(可选)
 
