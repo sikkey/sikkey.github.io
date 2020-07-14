@@ -53,6 +53,12 @@ sudo apt-get install git
 
 ## c/c++ 库 (根据项目需要)
 
+### curl
+
+```
+sudo apt-get install curl
+```
+
 ### lua
 安装编译lua必要的库
 ```
