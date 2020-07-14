@@ -2,6 +2,8 @@
 
 本文随时更新，有时需要清理浏览器缓存后才能刷新
 
+----------
+
 ## 配置源
 ```
 vi /etc/apt/sources.list
@@ -37,7 +39,11 @@ sudo apt-get install vim
 
 ## 安装跨平台开发环境
 ```
-sudo apt-get install gdb gdbserver
+sudo apt-get install -y build-essential gdb gdbserver rsync
+```
+启动rsync(一般安装后自动启动),**如果没有rsync, vs2017跨平台开发时无法远程同步源码**
+```
+rsync --daemon O
 ```
 
 ## 安装源代码版本管理 git
