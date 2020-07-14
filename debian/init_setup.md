@@ -54,6 +54,26 @@ sudo apt-get install git
 ## c/c++ 库 (根据项目需要)
 
 ### lua
+安装编译lua必要的库
+```
+sudo apt-get install libreadline-dev
+```
+编译lua源码
+```
+$ mkdir lua_build
+$ cd lua_build
+$ curl -R -O http://www.lua.org/ftp/lua-5.3.5.tar.gz
+$ tar -zxf lua-5.3.5.tar.gz
+$ cd lua-5.3.5
+$ make linux test
+$ sudo make install
+
+cd src && mkdir -p /usr/local/bin /usr/local/include /usr/local/lib /usr/local/man/man1 /usr/local/share/lua/5.3 /usr/local/lib/lua/5.3
+cd src && install -p -m 0755 lua luac /usr/local/bin
+cd src && install -p -m 0644 lua.h luaconf.h lualib.h lauxlib.h lua.hpp /usr/local/include
+cd src && install -p -m 0644 liblua.a /usr/local/lib
+cd doc && install -p -m 0644 lua.1 luac.1 /usr/local/man/man1
+```
 lua json序列化库
 ```
 sudo apt-get install lua-cjson
