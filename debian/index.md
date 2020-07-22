@@ -20,6 +20,31 @@
 ```
 输入命令后提示输入密码，输入密码切换为root用户
 
+# 配置Debian允许root用户登陆GNOME桌面环境
+
+```
+1 su
+切换为root用户
+
+2 vi /etc/gdm3/daemon.conf
+在 security 下面添加 AllowRoot=true
+保存后退出vi
+3、vi /etc/pam.d/gdm-password
+
+注释掉这一行 auth required pam_succeed_if.so user != root quiet_success
+#auth required pam_succeed_if.so user != root quiet_success
+保存后退出vi
+```
+
+# Debian 新建用户
+linux命令行创建新用户/修改密码/删除用户
+```
+# cd /usr/sbin
+# ./useradd user
+# passwd user
+# deluser user
+```
+
 # Debian普通用户添加sudo权限
 
 1、安装sudo
