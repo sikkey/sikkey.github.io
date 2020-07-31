@@ -20,6 +20,7 @@ add host name port username password
 ## 属性选项配置
 
 1. 配置主程序
+
 ```
 本地输出目录："$(ProjectDir)bin\$(Platform)\$(Configuration)\"修改为"$(ProjectDir)..\bin\$(Platform)\$(Configuration)\"，是为了将所有项目输出文件放到同一个目录中，方便相互引用。
 
@@ -28,7 +29,7 @@ add host name port username password
 远程生成根目录："~/projects"修改为"/home/username/projects/$(SolutionName)"，"~"和"/root"是等价的，但是运行时动态库搜索目录不支持~路径，添加“$(SolutionName)”是为了区分不同的解决方案下相同名称的项目。
 ```
 
-2. 配置动态库：`"$(RemoteRootDir)/$(ProjectName)"`
+2. 配置动态库：```"$(RemoteRootDir)/$(ProjectName)"```
 
 ```
 本地输出目录："$(ProjectDir)bin\$(Platform)\$(Configuration)\"修改为"$(ProjectDir)..\bin\$(Platform)\$(Configuration)\"
