@@ -122,3 +122,31 @@ sudo apt-get install gnome-shell-extension-desktop-icons
 * [Complex Punk 推荐开发初始化安装套装](./init_setup.md)
 
 # [Debian操作系统备份与还原](./backup.md)
+
+# Linux中将命令运行结果放到文件中的方法
+
+以ls命令为例
+
+1. 仅转向不显示
+
+（1）ls > test.txt       把输出转向到指定的文件，如文件已存在的话也会重新写入，文件原内容不会保留
+
+（2）ls >> test.txt     是把输出附向到文件的后面，文件原内容会保留下来
+
+2. 转向同时显示
+
+ls | tee ls_tee.txt     把输出转向到指定的文件，同时显示，原文件内容不保存
+
+tee的作用:
+　　read from standard input and write to standard output and files
+　　它从标准输入读取内容并将其写到标准输出和文件中
+
+3. 同时记录多个命令输出结果
+
+script    启动命令，开始记录
+
+exit      退出命令，结束记录，之所以用exit命令是因为使用script时启动了一个shell，可以通过ps auxfww命令来验证
+
+记录内容默认记录在typescript文件中
+
+script. -a scripttest.txt 指定文件记录命令执行内容
