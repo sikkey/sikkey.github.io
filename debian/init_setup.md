@@ -86,3 +86,25 @@ sudo apt-get install lua-cjson
 ```
 
 ### [zmq](./zmq.md)
+
+### 安裝其他軟體
+
+#### wget (網絡下載)
+
+```
+sudo apt-get install wget
+```
+通過網絡下載文件
+```
+wget -c ${url}
+```
+
+### tar (解壓縮)
+壓縮
+```
+tar -cjf images.tar.bz2 ./images/
+```
+解壓
+```
+tar -xjf images.tar.bz2
+```
