@@ -14,6 +14,10 @@
 
 [Debian 10.4 AMD64 安装映像](http://http.us.debian.org/debian/dists/buster/main/installer-arm64/current/images/)
 
+# putty控制臺 不能删除，删除时出现 退格^H 解決方案
+
+点击上方：文件→属性→终端→键盘，把 delete 和 backspace 序列改为 ASCII 127
+
 # Debian 切换为root用户
 ```
 # su
