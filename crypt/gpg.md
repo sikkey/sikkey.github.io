@@ -74,6 +74,14 @@ gpg --gen-revoke [uid: your email, or hash code]
 gpg --list-keys
 ```
 
+show key id
+
+```
+gpg --list-keys --keyid-format long
+```
+
+
+
 ## delete keys
 
 ```
@@ -107,6 +115,7 @@ gpg --fingerprint <key ID>
 
 ```
 gpg --import <key ID>
+gpg --import <public key file>
 ```
 
 or find keys from servers
