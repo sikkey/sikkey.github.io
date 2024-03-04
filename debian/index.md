@@ -125,6 +125,8 @@ sudo apt-get install gnome-shell-extension-desktop-icons
 
 * [Complex Punk 推荐开发初始化安装套装](./init_setup.md)
 
+* [網路代理squid](./squid.md)
+
 # [Debian操作系统备份与还原](./backup.md)
 
 # Linux中将命令运行结果放到文件中的方法
