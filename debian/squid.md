@@ -182,18 +182,27 @@ sudo service squid restart
 # yum install httpd-tools -y
 ```
 
+上述在debian沒有，安裝apache工具包，包含htpasswd
+
+```
+sudo apt install apache2-utils
+```
+
+
 生成密码文件
 ```
 # mkdir /etc/squid3/
 # 生成密码文件，指定文件路径，其中squid是用户名
-# htpasswd -cd /etc/squid3/passwords squid
+# htpasswd -cd /etc/squid/passwords squid
 #提示输入密码，不能超过8个字符，输入密码123456
 测试密码文件
 
-# /usr/lib64/squid/basic_ncsa_auth /etc/squid3/passwords                
+# /usr/lib/squid/basic_ncsa_auth /etc/squid/passwords                
 squid 123456
 OK 
 # 测试完成，crtl + c 打断
+
+
 ```
 
 配置squid使用验证，修改配置文件

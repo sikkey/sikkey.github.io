@@ -103,8 +103,25 @@ wget -c ${url}
 壓縮
 ```
 tar -cjf images.tar.bz2 ./images/
+
+tar -zxvf program.tar.gz
 ```
 解壓
 ```
 tar -xjf images.tar.bz2
+```
+
+### 安裝
+
+Option 1: dpkg Command
+
+```
+sudo dpkg -i <package path>
+sudo apt install -f
+```
+
+Option 2: apt Package Manager
+
+```
+sudo apt install <package path>
 ```
