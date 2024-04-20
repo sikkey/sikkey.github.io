@@ -72,6 +72,14 @@ user ALL=(ALL) ALL 用户user执行sudo时需要密码。
 # chmod -w /etc/sudoers
 ```
 
+# Linux 安装 neofetch
+
+neofetch 是一个用于显示 Linux 系统信息的命令行工具，它可以显示系统信息、软件包信息、硬件信息等。
+
+```
+# apt-get install neofetch
+```
+
 # Debian 更新源
 [apt-get 更新源](./apt.md)
 
