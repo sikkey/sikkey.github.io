@@ -27,6 +27,54 @@ deb https://mirror.sjtu.edu.cn/debian-security/ stretch/updates main contrib non
 deb-src https://mirror.sjtu.edu.cn/debian-security/ stretch/updates main contrib non-free
 ```
 
+debian10 源
+```
+deb http://deb.debian.org/debian/ buster main contrib non-free
+deb-src http://deb.debian.org/debian/ buster main contrib non-free
+
+deb http://deb.debian.org/debian/ buster-updates main contrib non-free
+deb-src http://deb.debian.org/debian/ buster-updates main contrib non-free
+
+deb http://security.debian.org/ buster/updates main contrib non-free
+deb-src http://security.debian.org/ buster/updates main contrib non-free
+```
+
+debian11 源
+```
+deb http://deb.debian.org/debian/ bullseye main contrib non-free
+deb-src http://deb.debian.org/debian/ bullseye main contrib non-free
+
+deb http://deb.debian.org/debian/ bullseye-updates main contrib non-free
+deb-src http://deb.debian.org/debian/ bullseye-updates main contrib non-free
+
+deb http://security.debian.org/ bullseye/updates main contrib non-free
+deb-src http://security.debian.org/ bullseye/updates main contrib non-free
+```
+
+debian12 源
+```
+deb https://ftp.debian.org/debian/ bookworm contrib main non-free non-free-firmware
+# deb-src https://ftp.debian.org/debian/ bookworm contrib main non-free non-free-firmware
+
+deb https://ftp.debian.org/debian/ bookworm-updates contrib main non-free non-free-firmware
+# deb-src https://ftp.debian.org/debian/ bookworm-updates contrib main non-free non-free-firmware
+
+deb https://ftp.debian.org/debian/ bookworm-proposed-updates contrib main non-free non-free-firmware
+# deb-src https://ftp.debian.org/debian/ bookworm-proposed-updates contrib main non-free non-free-firmware
+
+deb https://ftp.debian.org/debian/ bookworm-backports contrib main non-free non-free-firmware
+# deb-src https://ftp.debian.org/debian/ bookworm-backports contrib main non-free non-free-firmware
+
+deb https://security.debian.org/debian-security/ bookworm-security contrib main non-free non-free-firmware
+# deb-src https://security.debian.org/debian-security/ bookworm-security contrib main non-free non-free-firmware
+```
+
+## debian源生成器(暂时不支持新版本)
+
+```
+https://debgen.github.io/
+```
+
 ## 更新软件包索引
 
 ```
